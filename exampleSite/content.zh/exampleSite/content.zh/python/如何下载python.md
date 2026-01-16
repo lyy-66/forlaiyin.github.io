@@ -12,14 +12,14 @@ math: false
 
 我是在必应里面直接搜索的，找到下面这个图片的链接进去
 
-![Python官网首页](/images/Pasted-image-20260115135710.png)
-![Python官网首页2](/images/Pasted-image-20260115135832.png)
+![Python官网首页](/images/Pasted%20image%20260115135710.png)
+![Python官网首页2](/images/Pasted%20image%20260115135832.png)
 
 ### 二、找到Downloads
 
 因为我是Windows电脑，所以直接点进Windows去下载，进去之后的页面是这样：
 
-![Python下载页面](/images/Pasted-image-20260115140014.png)
+![Python下载页面](/images/Pasted%20image%20260115140014.png)
 
 **如果找不到这个页面也可以尝试点击下方的链接，应该就可以跳过这个步骤直接进入该界面**
 
@@ -33,15 +33,15 @@ math: false
 
 *Win就是Fn和Alt中间那个Windows键*
 
-![运行对话框](/images/Pasted-image-20260115140610.png)
+![运行对话框](/images/Pasted%20image%20260115140610.png)
 
 #### *step 2. 输入 `msinfo32` 并按回车(Enter)
 
-![输入msinfo32](/images/Pasted-image-20260115140909.png)
+![输入msinfo32](/images/Pasted%20image%20260115140909.png)
 
 #### *step 3. 右侧找到系统类型
 
-![系统类型](/images/Pasted-image-20260115141043.png)
+![系统类型](/images/Pasted%20image%20260115141043.png)
 
 这个系统类型是 `X64` 就是64位系统，是 `X32` 就是32位系统
 
@@ -51,23 +51,23 @@ math: false
 
 [Python安装教程_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1f3411t73m/?spm_id_from=333.337.search-card.all.click&vd_source=8f23d8e73564506b0d54c607add3bf31)
 
-![Python安装界面](/images/Pasted-image-20260115141426.png)
+![Python安装界面](/images/Pasted%20image%20260115141426.png)
 
 这个界面我们把两个选项都勾选上，并且选在第二个 **Customize installation**
 
-![可选功能](/images/Pasted-image-20260115141601.png)
+![可选功能](/images/Pasted%20image%20260115141601.png)
 
 这个界面所有的都选上，然后点击next
 
-![高级选项](/images/Pasted-image-20260115141759.png)
+![高级选项](/images/Pasted%20image%20260115141759.png)
 
 在这个界面我们就可以在 **Browse** 里面选择我们希望安装的位置，我修改到了D盘，新建了文件夹python，改完之后大概长这样：
 
-![选择安装路径](/images/Pasted-image-20260115141936.png)
+![选择安装路径](/images/Pasted%20image%20260115141936.png)
 
 点击安装之后出现：
 
-![安装成功](/images/Pasted-image-20260115142004.png)
+![安装成功](/images/Pasted%20image%20260115142004.png)
 
 这个successful就说明安装成功了，这个界面可以关闭了
 
@@ -75,11 +75,11 @@ math: false
 
 点击桌面下方四个蓝色方块的图标，在搜索里面搜索python：
 
-![开始菜单搜索](/images/Pasted-image-20260115142256.png)
-![搜索结果](/images/Pasted-image-20260115142448.png)
+![开始菜单搜索](/images/Pasted%20image%20260115142256.png)
+![搜索结果](/images/Pasted%20image%20260115142448.png)
 
 点击这个IDLE就可以了：
 
-![Python IDLE](/images/Pasted-image-20260115142532.png)
+![Python IDLE](/images/Pasted%20image%20260115142532.png)
 
 IDLE分为交互模式和编辑器模式，详情可看第二部分。
