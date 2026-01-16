@@ -3,7 +3,6 @@ name: Deploy to Github Pages
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
@@ -24,20 +23,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true  # ← 添加这行，获取主题子模块
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 0.146.7
+          hugo-version: 0.154.5  # ← 更新到最新版本
           extended: true
       - name: Run Hugo
-        working-directory: exampleSite
-        run: hugo --minify --themesDir ../.. --baseURL="https://book.alxs.dev/"
+        run: hugo --minify --baseURL="https://forlaiyin.github.io/"  # ← 删除 working-directory，改为根目录
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'exampleSite/public'
+          path: './public'  # ← 改为 ./public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
