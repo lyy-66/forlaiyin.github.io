@@ -33,12 +33,12 @@ jobs:
           hugo-version: 0.154.5
           extended: true
       - name: Run Hugo
-        working-directory: exampleSite  # ← 关键！在 exampleSite 目录运行
-        run: hugo --minify --baseURL="https://forlaiyin.github.io/"
+        working-directory: exampleSite  # 关键：在 exampleSite 目录运行
+        run: hugo --minify --baseURL="https://forlaiyin.github.io/" --themesDir ../..
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'exampleSite/public'  # ← 上传 exampleSite 的 public 目录
+          path: 'exampleSite/public'  # 关键：上传 exampleSite/public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
