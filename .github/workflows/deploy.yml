@@ -24,20 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  # ← 添加这行，获取主题子模块
+          submodules: true
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 0.154.5  # ← 更新到最新版本
+          hugo-version: 0.154.5
           extended: true
       - name: Run Hugo
-        run: hugo --minify --baseURL="https://forlaiyin.github.io/"  # ← 删除 working-directory，改为根目录
+        working-directory: exampleSite  # ← 关键！在 exampleSite 目录运行
+        run: hugo --minify --baseURL="https://forlaiyin.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'  # ← 改为 ./public
+          path: 'exampleSite/public'  # ← 上传 exampleSite 的 public 目录
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
